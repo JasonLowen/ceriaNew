@@ -348,6 +348,22 @@
             justify-content: center;
         }
 
+        .tempIndexTitle {
+            color: #38bdf8;
+        }
+
+        .tempIndexDesc {
+            color: #d1d5db;
+        }
+
+        .concentrationTitle {
+            color: #dc2626;
+        }
+
+        .concentrationDesc {
+            color: #d1d5db;
+        }
+
     </style>
 </head>
 <body>
@@ -436,8 +452,8 @@
 
         <section id="tempGraphic">
             <div style="width: 80%; margin: 0 auto;">
-                <h1 class="tw-text-sky-400">Global Land-Ocean Temperature Index</h1>
-                <p class="tw-text-gray-400">Dilansir dari: NASA's Goddard Institute for Space Studies (GISS). Credit: NASA/GISS</p>
+                <h1 class="tempIndexTitle">Global Land-Ocean Temperature Index</h1>
+                <p class="tempIndexDesc">Dilansir dari: NASA's Goddard Institute for Space Studies (GISS). Credit: NASA/GISS</p>
                 <p>Grafik Lowess menunjukkan tren suhu global yang dihaluskan, mengungkapkan pola jangka panjang. Data menunjukkan peningkatan suhu yang stabil sejak awal abad ke-20, dengan percepatan pemanasan yang signifikan dalam beberapa dekade terakhir, mencerminkan dampak perubahan iklim khususnya pada 10 tahun terakhir.</p>
                 <a href="https://data.giss.nasa.gov/gistemp/graphs/graph_data/Global_Mean_Estimates_based_on_Land_and_Ocean_Data/graph.txt"><button type="button" class="btn btn-outline-info">Dataset</button></a>
                 <canvas id="temperatureChart"></canvas>
@@ -446,8 +462,8 @@
 
         <section id="concentrationGraphic">
             <div style="width: 80%; margin: 0 auto;">
-                <h1 class="tw-text-red-600">Tingkat Konsentrasi CO2 di Atmosfer (2011-2022*)</h1>
-                <p class="tw-text-gray-400">Dilansir dari: databok's Konsentrasi CO2 di Atmosfer Terus Naik, Ini Rinciannya. Credit: Monavia Ayu Rizaty</p>
+                <h1 class="concentrationTitle">Tingkat Konsentrasi CO2 di Atmosfer (2011-2022*)</h1>
+                <p class="concentrationDesc">Dilansir dari: databok's Konsentrasi CO2 di Atmosfer Terus Naik, Ini Rinciannya. Credit: Monavia Ayu Rizaty</p>
                 <p>Menurut data Badan Penerbangan dan Antariksa Amerika Serikat (NASA), tingkat konsentrasi karbon dioksida (CO2) di atmosfer global sudah mencapai rata-rata 417,6 part per million (ppm) pada 17 Mei 2022.
                 Angka tersebut sudah naik sekitar 6,2% dibanding tahun 2011. Peningkatan itu  juga konsisten terjadi setiap tahun, seperti terlihat pada grafik.</p>
                 <a href="https://databoks.katadata.co.id/demografi/statistik/9232a4932fdbb34/konsentrasi-co2-di-atmosfer-terus-naik-ini-rinciannya"><button type="button" class="btn btn-outline-danger">Dataset</button></a>
