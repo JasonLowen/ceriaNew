@@ -19,7 +19,7 @@
 
     <nav id="navigationbar" class="navbar navbar-expand-lg sticky-top p-1">
         <div class="container-fluid gap-5">
-          <a class="navbar-brand text-white m-0" aria-current="page" href="/"><img class="tw-w-20" src="/assets/cerialogo.png" alt="Ceria"></a>
+          <a class="navbar-brand text-white m-0" aria-current="page" href="/"><img class="tw-w-20" src="{{ asset('assets/cerialogo.png') }}" alt="Ceria"></a>
           <button class="navbar-toggler tw-border-white tw-text-sky-400 tw-bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
