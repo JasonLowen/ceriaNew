@@ -37,7 +37,7 @@
         }
 
         #aboutCeria{
-            background-image: url('/assets/homebackground.jpg');
+            background-image: url('https://cdn.discordapp.com/attachments/1292868361692119194/1323576161896501392/homebackground.jpg?ex=677503db&is=6773b25b&hm=aedb973386d1e6c68bae217425f509fbb93968a82fc513ca52e632227391cc03&');
             background-size: cover;
             background-repeat: no-repeat;
             height: 100vh;
@@ -312,7 +312,7 @@
 
     <nav id="navigationbar" class="navbar navbar-expand-lg sticky-top">
         <div class="container-fluid">
-          <a class="navbar-brand text-white" aria-current="page" href="/"><img class="ceriaLogo" src="{{ asset('assets/cerialogo.png') }}" alt="Ceria"></a>
+          <a class="navbar-brand text-white" aria-current="page" href="/"><img class="ceriaLogo" src="https://cdn.discordapp.com/attachments/1292868361692119194/1323576160558252152/cerialogo.png?ex=677503db&is=6773b25b&hm=e1ec679bbe3b3ea41ef52f34762683bc4cdad55b5e3f467c58eac592fc6ae5bb&" alt="Ceria"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
