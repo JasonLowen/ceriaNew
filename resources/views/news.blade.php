@@ -15,6 +15,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
     @vite('resources/css/app.css')
     <style>
+        #navigationbar{
+            background-color: rgba(23, 23, 27, 1);
+            color: white;
+            font-family: "Kanit", serif;
+            padding: 0.25rem;
+        }
         #newsPage{
             padding: 30px 50px;
         }
@@ -46,13 +52,16 @@
         .newsImages{
             width: 200px;
         }
+        .ceriaLogo{
+            width: 5rem;
+        }
     </style>
 </head>
 <body>
 
     <nav id="navigationbar" class="navbar navbar-expand-lg sticky-top p-1">
         <div class="container-fluid gap-5">
-          <a class="navbar-brand text-white m-0" aria-current="page" href="/"><img class="tw-w-20" src="/assets/cerialogo.png" alt="Ceria"></a>
+          <a class="navbar-brand text-white m-0" aria-current="page" href="/"><img class="ceriaLogo" src="/assets/cerialogo.png" alt="Ceria"></a>
           <button class="navbar-toggler tw-border-white tw-text-sky-400 tw-bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
