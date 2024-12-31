@@ -32,7 +32,7 @@ main{
 }
 
 #aboutCeria{
-    background-image: url('/assets/homebackground.jpg');
+    background-image: url('../public/assets/homebackground.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
