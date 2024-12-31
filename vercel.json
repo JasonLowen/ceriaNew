@@ -14,7 +14,7 @@
     "env": {
         "APP_ENV": "production",
         "APP_DEBUG": "false",
-        "APP_URL": "",
+        "APP_URL": "https://ceria-new-jason-lowens-projects.vercel.app/",
         "APP_KEY": "base64:JY9DHW8RnMmpQ6g5beMWGvAJncM5kjluUArpqP4a/aM=",
         "APP_CONFIG_CACHE": "/tmp/config.php",
         "APP_EVENTS_CACHE": "/tmp/events.php",
