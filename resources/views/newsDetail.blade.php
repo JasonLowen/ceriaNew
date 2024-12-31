@@ -12,6 +12,127 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
     @vite('resources/css/app.css')
+    <style>
+        main{
+            padding: 10px;
+        }
+
+        #navigationbar{
+            background-color: rgba(23, 23, 27, 1);
+            color: white;
+            font-family: "Kanit", serif;
+        }
+
+        #aboutCeria{
+            background-image: url('/assets/homebackground.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            scroll-margin-top: 70px;
+        }
+
+        #newsDetailPage{
+            display: flex;
+            gap: 30px;
+            padding: 30px 40px;
+            justify-content: space-between;
+        }
+
+        .newsDetailLeft{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 0 60px;
+        }
+
+        .newsDetailLeftContainer{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        .newsDetailLeftItem{
+            border-bottom: 2px solid gray;
+            text-align: left;
+            padding-bottom: 10px;
+        }
+
+        .newsWriterAndPublishDate{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        #newsWriter{
+            font-weight: bold;
+        }
+
+        .newsTitle{
+            font-weight: bold;
+            font-size: 60px;
+        }
+
+        .newsImage img{
+            max-width: 60%;
+        }
+
+        #newsLink{
+            display: flex;
+            gap:    20px;
+        }
+
+        /* #newsLink button{
+            text-decoration: none;
+            background-color: blue;
+            border-radius: 10px;
+            color: white;
+            padding: 10px;
+            font-weight: bold;
+        } */
+
+        #newsLink button:hover{
+            cursor: pointer;
+            opacity: .7;
+            transition: .15s;
+        }
+
+        #newsLink button:active{
+            opacity: .4;
+            transition: .15s;
+        }
+
+        .newsDetailRight{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 70%;
+        }
+
+        @media screen and (max-width: 800px) {
+            #newsDetailPage{
+                display: flex;
+                flex-direction: column;
+                padding: 0px;
+            }
+
+            .newsDetailLeft{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                padding: 0px;
+            }
+        }
+    </style>
 </head>
 <body>
 

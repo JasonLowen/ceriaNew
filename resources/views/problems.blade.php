@@ -21,6 +21,270 @@
             text-align: center;
             position: relative;
         }
+        html {
+            scroll-behavior: smooth;
+        }
+
+        *{
+            font-family: "Kanit", serif;
+        }
+
+        main{
+            padding: 0px;
+            overflow: hidden;
+            font-family: "Kanit", serif;
+        }
+
+        #navigationbar{
+            background-color: rgba(23, 23, 27, 1);
+            color: white;
+            font-family: "Kanit", serif;
+        }
+
+        #aboutCeria{
+            background-image: url('/assets/homebackground.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            scroll-margin-top: 70px;
+        }
+
+        #carousel{
+            background-color: rgba(23, 23, 27, 1);
+        }
+
+        .carousel-inner {
+            position: relative;
+            width: 100%;
+            height: 600px;
+            overflow: hidden;
+        }
+
+        .carousel-inner img {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+        }
+
+        #carouseltitle{
+            color: white;
+            display: flex;
+            justify-content: center;
+        }
+
+        #ceriaText h1{
+            font-size: 100px;
+            font-weight: bold;
+            color: white;
+        }
+
+        #ceriaText p{
+            color: white;
+            font-size: 22px;
+        }
+
+        #problems{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            gap: 20px;
+        }
+
+        #problemSection{
+            margin-bottom: 5%;
+            margin-top: 5%;
+        }
+
+        .problemCard{
+            background-color: white;
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black;
+            text-align: center;
+            padding: 10px;
+            border-radius: 20px;
+        }
+
+        .problemCard:hover{
+            transform: scale(1.04);
+            transition: .1s ease-in;
+            border: 3px solid black;
+            cursor: pointer;
+        }
+
+        .problem-header h1 {
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+
+        .problem-header-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .section-dark {
+            background-color: rgba(23, 23, 27, 1);
+            color: white;
+        }
+
+        .section-light {
+            background-color: #f9f9f9;
+        }
+
+        .justify-text {
+            text-align: justify;
+        }
+
+        #headerpictures{
+
+            width: 50%;
+        }
+
+        .vital-signs {
+            padding: 20px;
+            background-color: rgba(23, 23, 27, 1);
+            color: white;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .items {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .item {
+            width: 22%;
+            text-align: center;
+            position: relative;
+        }
+
+        .item h3 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .value {
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            align-items: baseline;
+            justify-content: center;
+        }
+
+        .value span:first-child {
+            font-size: 18px;
+            margin-right: 5px;
+        }
+
+        .value .unit {
+            font-size: 14px;
+            margin-left: 5px;
+        }
+
+        .value.up span:first-child {
+            color: rgb(59, 200, 255);
+        }
+
+        .value.down span:first-child {
+            color: red;
+        }
+
+        .hover-bar {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 5px;
+            background: rgb(59, 200, 255);
+            width: 0;
+            transition: width 0.4s ease;
+        }
+
+        #down-hover{
+            background: red;
+        }
+
+        .item:hover .hover-bar {
+            width: 100%;
+        }
+
+        #tempGraphic
+        {
+            padding-top: 5%;
+            padding-bottom: 5%;
+        }
+
+        .rightProblemImg{
+            display: flex;
+            justify-content: end;
+            align-items: center;
+        }
+
+        .leftProblemImg{
+            display: flex;
+            justify-content: start;
+            align-items: center;
+        }
+
+        #concentrationGraphic{
+            padding-bottom: 2%;
+        }
+
+        @media (max-width: 768px) {
+            main{
+            height: 100%;
+            }
+            .carousel-inner {
+                height: 300px;
+            }
+            .carousel-inner img {
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+            }
+            #searchbar{
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+            .items{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .item {
+                width: 100%;
+                text-align: center;
+                position: relative;
+                margin-bottom: 5%;
+            }
+            #headerdesc{
+                padding-left: 2%;
+                padding-right: 2%;
+                text-align: center;
+            }
+        }
     </style>
     @vite('resources/css/app.css')
 </head>

@@ -14,6 +14,39 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
     @vite('resources/css/app.css')
+    <style>
+        #newsPage{
+            padding: 30px 50px;
+        }
+
+        #newsPage a{
+            text-decoration: none;
+            color: black;
+        }
+
+        .newsContainer{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            border: 1px solid black;
+        }
+        .newsContainer:hover{
+            transform: scale(1.02);
+            transition: .1s ease-in;
+            border: 2px solid orange;
+        }
+
+        .newsContainerLeft{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .newsImages{
+            width: 200px;
+        }
+    </style>
 </head>
 <body>
 
