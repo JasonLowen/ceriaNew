@@ -105,6 +105,18 @@
         #problemSection{
             margin-bottom: 5%;
             margin-top: 5%;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .problemSectionContainer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
         }
 
         .problemCard{
@@ -328,6 +340,14 @@
             color: #38bdf8;
         }
 
+        .masalahDihadapi {
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            margin-top: 1.25rem;
+            justify-content: center;
+        }
+
     </style>
 </head>
 <body>
@@ -484,7 +504,7 @@
                         </button>
                     @endif
                 </div>
-                <div class="tw-flex-wrap tw-text-center mt-5">
+                <div class="masalahDihadapi">
                     <a href="#problemSection"><button type="button" class="btn btn-outline-light">Masalah yang dihadapi</button></a>
                 </div>
             </div>
@@ -492,8 +512,8 @@
 
           <br>
 
-        <section id="problemSection" class="tw-bg-white tw-content-center">
-            <div class="tw-flex-wrap align-content-center justify-center justify-content-center">
+        <section id="problemSection">
+            <div class="problemSectionContainer">
                 <div class="tw-justify-center tw-flex tw-text-black">
                     <h1>Permasalahan Iklim</h1>
                 </div>
