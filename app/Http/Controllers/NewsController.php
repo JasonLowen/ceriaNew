@@ -53,10 +53,12 @@ class NewsController extends Controller
     {
         $news = News::where('newsID', 'like', $id)->first();
         $problem = Problem::where('problemID', 'like', $news->newsID)->first();
+        $allProblems = Problem::all();
 
         return view('newsDetail', [
             'news' => $news,
             'problem' => $problem,
+            'allProblems' => $allProblems,
         ]);
     }
 

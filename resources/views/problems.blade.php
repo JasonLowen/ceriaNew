@@ -53,10 +53,6 @@
                 <a class="nav-link active text-white" aria-current="page" href="/news">Berita</a>
               </li>
             </ul>
-            <form id="searchbar" class="d-flex" role="search" action="/search" method="GET">
-              <input class="form-control me-2" type="search" placeholder="Cari Berita" aria-label="Search" name="query">
-              <button class="btn btn-outline-success" type="submit">Cari</button>
-            </form>
           </div>
         </div>
     </nav>
