@@ -353,7 +353,7 @@
         }
 
         .tempIndexDesc {
-            color: #d1d5db;
+            color: #9c9c9c;
         }
 
         .concentrationTitle {
@@ -361,7 +361,7 @@
         }
 
         .concentrationDesc {
-            color: #d1d5db;
+            color: #9c9c9c;
         }
 
     </style>
