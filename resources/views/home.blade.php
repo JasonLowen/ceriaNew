@@ -50,6 +50,19 @@
 
         #carousel{
             background-color: rgba(23, 23, 27, 1);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .carouselContainer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+            flex-direction: column;
+            width: 100%;
         }
 
         .carousel-inner {
@@ -423,7 +436,7 @@
         </section>
 
         <section id="carousel" class="tw-h-screen tw-content-center">
-            <div class="tw-flex-wrap align-content-center justify-center justify-content-center">
+            <div class="carouselContainer tw-flex-wrap align-content-center justify-center justify-content-center">
                 <div id="carouseltitle">
                     <h1>Berita Terkini</h1>
                 </div>
