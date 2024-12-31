@@ -27,25 +27,25 @@ class NewsController extends Controller
         ]);
     }
 
-    public function category($id)
-    {
-        $problem = Problem::all();
-        $news = News::where('problemID', 'like', $id)->get();
+    // public function category($id)
+    // {
+    //     $problem = Problem::all();
+    //     $news = News::where('problemID', 'like', $id)->get();
 
-        return view('home', [
-            'news' => $news,
-            'problem' => $problem,
-        ]);
-    }
+    //     return view('home', [
+    //         'news' => $news,
+    //         'problem' => $problem,
+    //     ]);
+    // }
 
     public function search(Request $request)
     {
         $query = $request->input('query');
-        $problem = Problem::all();
+        $allProblems = Problem::all();
         $news = News::where('newsTitle', 'like', '%' . $query . '%')->get();
         return view('news', [
             'news' => $news,
-            'problem' => $problem,
+            'allProblems' => $allProblems,
         ]);
     }
 
