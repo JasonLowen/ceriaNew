@@ -1,15 +1,15 @@
 <?php
 
 // Autoload dependencies
-require DIR . '/../vendor/autoload.php';
+require __DIR__ . '/../vendor/autoload.php';
 
 // Load environment variables if not already loaded
-if (file_exists(DIR . '/../.env')) {
-    Dotenv\Dotenv::createImmutable(DIR . '/../')->safeLoad();
+if (file_exists(__DIR__ . '/../.env')) {
+    Dotenv\Dotenv::createImmutable(__DIR__ . '/../')->safeLoad();
 }
 
 // Bootstrap Laravel
-$app = require DIR . '/../bootstrap/app.php';
+$app = require __DIR__ . '/../bootstrap/app.php';
 
 // Handle the request
 $kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);
