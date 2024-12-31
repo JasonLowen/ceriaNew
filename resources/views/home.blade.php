@@ -306,6 +306,15 @@
             margin: 0;
         }
 
+        .header {
+            display: flex;
+            justify-content: center;
+        }
+
+        .viaNASA {
+            color: #38bdf8;
+        }
+
     </style>
 </head>
 <body>
@@ -354,9 +363,9 @@
         </section>
 
         <div class="vital-signs">
-            <div class="header tw-justify-center tw-flex">
+            <div class="header">
                 <h1>TANDA-TANDA VITAL</h1>
-                <p class="tw-text-sky-400">(via NASA)</p>
+                <p class="viaNASA">(via NASA)</p>
             </div>
             <div class="items">
                 <div class="item">
